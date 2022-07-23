@@ -1,0 +1,1002 @@
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@100;300;700&display=swap");
+
+:root {
+  --color-de-fondo--: rgb(61, 128, 243);
+}
+* {
+  font-family: "Arima", cursive, "arial";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* leer sobre de jerarquias de css
+!important  es la jerarquia mas alta de todas
+
+TAREA
+-GALERIA.HTML-
+DEJAR TODOS IGUALES LOS HEADERS NAVBAR Y FOOTERS
+
+EMPEZAR A MAQUETAR EL SITIO DE RESTAURANTE DE EJEMPLO
+
+*/
+/* medidas relativas y absolutas
+Relativa: VH viewport heigth vg
+rem
+
+medidas ABSOLUTAS pixeles px
+y centimetros cm
+
+pseudo elementos en css: un elemento q no esta declarado en html sino en css*/
+
+/* EL HEADER */
+body {
+  background-color: #252323e8;
+  color: white;
+}
+#header__sectionTitulo {
+  background-color: var(--color-de-fondo--);
+  padding: 0.2rem 0;
+  text-align: center;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+  border-bottom: 0.1rem solid rgb(81, 86, 102);
+}
+
+#header__sectionTitulo h1,
+#header__sectionTitulo h2 {
+  color: rgb(254, 254, 254);
+}
+
+#header__sectionTitulo h2 {
+  font-size: 2em;
+  font-weight: 50;
+}
+
+/*main*/
+p {
+  color: white;
+}
+
+main {
+  padding: 0 0.5rem;
+}
+
+.main__section__articleLinks {
+  color: rgb(108, 96, 240);
+  text-decoration: none;
+  margin: 1rem;
+  border: 2px solid #7c7c7c;
+  border-radius: 2px;
+  padding: 0.5rem 0.75rem;
+}
+
+.main__section__articleLinks:visited {
+  color: rgb(150, 0, 170);
+}
+
+.main__section__articleLinks:first-child {
+  color: rgb(255, 0, 30);
+}
+
+.main__section__imgs {
+  display: inline-block;
+  width: 30%;
+  height: 300px;
+}
+
+#main__section__imagenes {
+  text-align: center;
+  /* margin-bottom: 1rem; */
+}
+
+#main__section__galeriaImagenes {
+  text-align: center;
+  /* border: 0.5rem; */
+  /* padding: 0.5rem; */
+  transition: all 0.2 ease-in-out;
+  /* padding: 1rem 2rem; */
+  display: flex;
+  flex-wrap: wrap;
+  object-fit: cover;
+  justify-content: center;
+  gap: 8px;
+}
+
+.main__section__galeriaImgs:hover {
+  transform: scale(1.1);
+}
+
+.main__section__galeriaImgs {
+  display: inline-block;
+  width: 500px;
+  height: 500px;
+  object-fit: fill;
+  object-position: center;
+  box-shadow: 0 5px 8px 1px #0f0707;
+  transition: transform 0.7s ease-in-out;
+}
+/* creacion de un pseudoelemento se declara con los " :: "
+control + espacio trae de nuevo la paleta de opciones de etiqueta*/
+#main__sectionYahoo::after {
+  content: "este es un texto en After";
+}
+
+/* #mapita{
+  width: 60vw;
+  height: 40vh;
+} */
+
+/* NAVBAR */
+
+#navbar {
+  font-size: 18px;
+  background-color: #7c7c7c;
+  padding: 0.5rem 0;
+  display: flex;
+}
+
+#navbar a {
+  flex: auto;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.6s;
+}
+
+#navbar a:visited {
+  text-decoration: none;
+}
+#navbar a:hover {
+  background-color: rgb(58, 148, 175);
+}
+/* leer sobre de keyframes para mover elementos por una pantalla */
+
+/* position */
+.position__mainCajas {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+#position__mainCajas--caja1 {
+  background-color: red;
+  position: relative;
+  top: 5px;
+  right: -10px;
+  /* position sticky se pega arriba
+  top 100px se pega una vez q alcanza los 100 pixeles
+  position fixed se queda fijo
+  relative es relativo al padre */
+}
+#position__mainCajas--caja2 {
+  background-color: rgb(0, 119, 255);
+  position: absolute;
+  top: 0;
+}
+#position__mainCajas--caja3 {
+  background-color: rgb(179, 20, 197);
+}
+#position__mainCajas--caja4 {
+  background-color: rgb(158, 180, 31);
+}
+
+/* display */
+#display__mainCajas--caja1 {
+  display: inline;
+}
+#display__mainCajas--caja2 {
+  display: block;
+}
+#display__mainCajas--caja3 {
+  display: none;
+}
+#display__mainCajas--caja4 {
+  display: inline-block;
+}
+#display__mainCajas--caja5 {
+  display: flex;
+}
+
+/*
+continuar con restaurante
+
+tarea hacer un robot hacer brazos patas cuernos etc con divs usando todas las propiedades de CSS
+practicar mas que nada posicionamiento
+
+microproyecto : tomar comandas onlines : direccion combo si llegamos o no a esa direccion etc*/
+
+/* FOOTER */
+
+footer {
+  background-color: rgb(107, 107, 107);
+  color: rgb(254, 251, 247);
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 1rem;
+}
+
+/* control mas llave de cierre " } "para hacer comentarios de line
+TAREAS
+/*pseudo clases . son los estados de una clase
+1
+ver el video de boxmodel
+2 quiz de html cuestionario
+3 terminar la pagina
+ */
+
+/*FLEXBOX*/
+
+#flexbox-container-1 {
+  display: flex;
+}
+
+.cuadrado {
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  margin: 2px;
+}
+
+.cuadrado--1 {
+  background-color: rgb(239, 113, 113);
+}
+.cuadrado--2 {
+  background-color: rgb(27, 8, 118);
+}
+.cuadrado--3 {
+  background-color: rgb(68, 255, 0);
+}
+
+#flexbox-container-1 {
+  display: flex;
+  flex-direction: row;
+}
+#flexbox-container-2 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+#flexbox-container-3 {
+  display: flex;
+  flex-direction: column;
+}
+#flexbox-container-4 {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#flexbox-container-5 {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* contacto html */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #252323e8;
+}
+
+.contacto input {
+  /* justify-content: center; */
+  padding: 0.8rem;
+  border: 1px solid rgb(43, 43, 222);
+  text-align: center;
+  font-size: x-large;
+  gap: 5px;
+  width: 100%;
+  background-color: #333131e8;
+  color: white;
+}
+
+.contacto input:focus {
+  color: white;
+}
+.contacto label {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#areaText {
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 1px;
+  border: 1px solid rgb(43, 43, 222);
+  text-align: center;
+  font-size: x-large;
+  gap: 1px;
+  width: 100%;
+  background-color: #333131e8;
+  color: white;
+}
+
+#msgLabel {
+  align-self: center;
+  color: white;
+}
+#checkArticle {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #333131e8;
+  border: 1px solid rgb(43, 43, 222);
+  margin-bottom: 2px;
+  padding: 10px;
+}
+
+#terminos {
+  align-self: flex-end;
+}
+#select {
+  display: flex;
+}
+
+#selectCountry {
+  margin-left: 5px;
+  margin: 15px 15px;
+  /* border-bottom: 12px;
+  border-top: -5px;
+  border-left: 15px; */
+  /* padding: 2px; */
+  align-items: center;
+  width: 40%;
+  font-size: larger;
+  background-color: #333131e8;
+  color: white;
+}
+
+.articleTextArea {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contacto label {
+  padding: 1rem;
+  /* border: 0.5px solid rgba(190, 190, 238, 0.795); */
+  text-align: left;
+  justify-content: flex-start;
+  font-size: x-large;
+}
+
+#terminos {
+  align-self: flex-end;
+  height: 20px;
+  border: 1px solid rgb(43, 43, 222);
+}
+
+#terminos:active {
+  background-color: rgba(10, 56, 126, 0.76);
+}
+
+#area {
+  display: inline-flex;
+  padding: 2px;
+  margin-top: 30px;
+  border-top: 4px;
+  border: 1px solid red;
+  flex: 1;
+  min-height: 50px;
+  width: 8rem;
+}
+#formulario__btnEnviar {
+  font-size: xx-large;
+  height: 60px;
+  width: 100%;
+  flex-basis: 100%;
+  padding: 5px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  text-align: center;
+  align-items: center;
+  background-color: #333131e8;
+  color: white;
+  border: 1px solid rgb(43, 43, 222);
+}
+#formulario__btnEnviar:hover {
+  background-color: rgba(10, 56, 126, 0.76);
+  border: 1px solid rgb(51, 130, 248);
+}
+
+/* elementos */
+
+/* dispositivos large */
+
+@media screen and (max-width: 992px) {
+  #main__section__galeriaImagenes {
+    text-align: center;
+    border: 0.1rem;
+    /* padding: 0.1rem; */
+    transition: all 0.2 ease-in-out;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
+  }
+  .main__section__galeriaImgs {
+    width: 40%;
+    height: 30vh;
+    object-fit: fill;
+    object-position: center;
+    box-shadow: 0 1px 1px 1px #0f0707;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  #header__sectionTitulo {
+    /* flex: auto; */
+    line-height: 2;
+    font-size: medium;
+    background-color: rgb(61, 128, 243);
+    /* padding: 0 0; */
+    text-align: center;
+    align-items: center;
+    margin-bottom: 0.1rem;
+    border: 0.1rem solid rgb(85, 85, 85);
+    height: max-content;
+  }
+
+  #header__sectionTitulo h1,
+  #header__sectionTitulo h2 {
+    color: white;
+    /* font-weight: 900; */
+  }
+
+  #header__sectionTitulo h2 {
+    font-size: 2em;
+    font-weight: 50;
+  }
+
+  /* contacto html */
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #252323e8;
+  }
+
+  .contacto input {
+    /* justify-content: center; */
+    padding: 0.8rem;
+    border: 1px solid rgb(43, 43, 222);
+    text-align: center;
+    font-size: x-large;
+    gap: 5px;
+    width: 100%;
+    background-color: #333131e8;
+    color: white;
+  }
+
+  .contacto input:focus {
+    color: white;
+  }
+  .contacto label {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  #areaText {
+    justify-content: center;
+    padding: 1rem;
+    margin-top: 1px;
+    border: 1px solid rgb(43, 43, 222);
+    text-align: center;
+    font-size: x-large;
+    gap: 1px;
+    width: 100%;
+    background-color: #333131e8;
+    color: white;
+  }
+
+  #msgLabel {
+    align-self: center;
+    color: white;
+  }
+  #checkArticle {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #terminos {
+    align-self: flex-end;
+  }
+  #select {
+    display: flex;
+  }
+
+  #selectCountry {
+    margin-left: 5px;
+    margin: 15px 15px;
+    /* border-bottom: 12px;
+    border-top: -5px;
+    border-left: 15px; */
+    /* padding: 2px; */
+    align-items: center;
+    width: 40%;
+    font-size: larger;
+    background-color: #333131e8;
+    color: white;
+  }
+
+  .articleTextArea {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contacto label {
+    padding: 1rem;
+    /* border: 0.5px solid rgba(190, 190, 238, 0.795); */
+    text-align: left;
+    justify-content: flex-start;
+    font-size: x-large;
+  }
+
+  #terminos {
+    align-self: flex-end;
+    height: 20px;
+    border: 1px solid rgb(43, 43, 222);
+  }
+
+  #area {
+    display: inline-flex;
+    padding: 2px;
+    margin-top: 30px;
+    border-top: 4px;
+    border: 1px solid red;
+    flex: 1;
+    min-height: 50px;
+    width: 8rem;
+  }
+  #formulario__btnEnviar {
+    font-size: xx-large;
+    height: 60px;
+    width: 100%;
+    flex-basis: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    align-items: center;
+    background-color: #333131e8;
+    color: white;
+    border: 1px solid rgb(43, 43, 222);
+  }
+}
+
+/* media screen dispositivos medianos */
+/* GALERIA */
+
+@media screen and (max-width: 768px) {
+  #main__section__galeriaImagenes {
+    text-align: center;
+    border: 0.1rem;
+    /* padding: 0.1rem; */
+    transition: all 0.2 ease-in-out;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 4px;
+  }
+
+  /* .main__section__galeriaImgs:hover {
+    transform: scale(1.3);
+  }*/
+
+  .main__section__galeriaImgs {
+    width: 90%;
+    height: 30vh;
+    object-fit: fill;
+    object-position: center;
+    box-shadow: 0 1px 1px 1px #0f0707;
+    transition: transform 0.5s ease-in-out;
+  }
+  #navbar {
+    font-size: 18px;
+    background-color: #7c7c7c;
+    /* padding: 0.5rem 0; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  #navbar a {
+    flex: auto;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    /* padding: 0.5rem 1rem; */
+    transition: background-color 0.6s;
+  }
+
+  /* EL HEADER */
+
+  #header__sectionTitulo {
+    /* flex: auto; */
+    line-height: 2;
+    font-size: medium;
+    background-color: rgb(61, 128, 243);
+    /* padding: 0 0; */
+    text-align: center;
+    align-items: center;
+    margin-bottom: 0.1rem;
+    border: 0.1rem solid rgb(85, 85, 85);
+    height: max-content;
+  }
+
+  #header__sectionTitulo h1,
+  #header__sectionTitulo h2 {
+    color: white;
+    /* font-weight: 900; */
+  }
+
+  #header__sectionTitulo h1 {
+    font-size: xx-large;
+    font-weight: 800;
+  }
+
+  #header__sectionTitulo h2 {
+    font-size: 2em;
+    font-weight: 50;
+  }
+
+  /* contacto html */
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #252323e8;
+  }
+
+  .contacto input {
+    /* justify-content: center; */
+    padding: 0.8rem;
+    border: 1px solid rgb(43, 43, 222);
+    text-align: center;
+    font-size: x-large;
+    gap: 5px;
+    width: 100%;
+    background-color: #333131e8;
+    color: white;
+  }
+
+  .contacto input:focus {
+    color: white;
+  }
+  .contacto label {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  #areaText {
+    justify-content: center;
+    padding: 1rem;
+    margin-top: 1px;
+    border: 1px solid rgb(43, 43, 222);
+    text-align: center;
+    font-size: x-large;
+    gap: 1px;
+    width: 100%;
+    background-color: #333131e8;
+    color: white;
+  }
+
+  #msgLabel {
+    align-self: center;
+    color: white;
+  }
+  #checkArticle {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #terminos {
+    align-self: flex-end;
+  }
+  #select {
+    display: flex;
+  }
+
+  #selectCountry {
+    margin-left: 5px;
+    margin: 15px 15px;
+    /* border-bottom: 12px;
+  border-top: -5px;
+  border-left: 15px; */
+    /* padding: 2px; */
+    align-items: center;
+    width: 40%;
+    font-size: larger;
+    background-color: #333131e8;
+    color: white;
+  }
+
+  .articleTextArea {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contacto label {
+    padding: 1rem;
+    /* border: 0.5px solid rgba(190, 190, 238, 0.795); */
+    text-align: left;
+    justify-content: flex-start;
+    font-size: x-large;
+  }
+
+  #terminos {
+    align-self: flex-end;
+    height: 20px;
+    border: 1px solid rgb(43, 43, 222);
+  }
+
+  #area {
+    display: inline-flex;
+    padding: 2px;
+    margin-top: 30px;
+    border-top: 4px;
+    border: 1px solid red;
+    flex: 1;
+    min-height: 50px;
+    width: 8rem;
+  }
+  #formulario__btnEnviar {
+    font-size: xx-large;
+    height: 60px;
+    width: 100%;
+    flex-basis: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    align-items: center;
+    background-color: #333131e8;
+    color: white;
+    border: 1px solid rgb(43, 43, 222);
+  }
+}
+
+/* media screen dispositivos pequeños */
+/* GALERIA */
+
+@media screen and (max-width: 576px) {
+  #main__section__galeriaImagenes {
+    text-align: center;
+    border: 0.1rem;
+    /* padding: 0.1rem; */
+    transition: all 0.2 ease-in-out;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  /* .main__section__galeriaImgs:hover {
+    transform: scale(1.3);
+  }*/
+
+  .main__section__galeriaImgs {
+    width: 100%;
+    height: 30vh;
+    object-fit: fill;
+    object-position: center;
+    box-shadow: 0 1px 1px 1px #0f0707;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(107, 107, 107);
+    color: rgb(254, 251, 247);
+    text-align: center;
+    padding: 0.1rem 0;
+    margin-top: 1rem;
+  }
+
+  footer p {
+    align-items: center;
+    font-size: larger;
+    text-align: center;
+  }
+
+  #navbar {
+    font-size: 18px;
+    background-color: #7c7c7c;
+    /* padding: 0.5rem 0; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  #navbar a {
+    flex: auto;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    /* padding: 0.5rem 1rem; */
+    transition: background-color 0.6s;
+  }
+
+  #navbar a:visited {
+    text-decoration: none;
+  }
+  #navbar a:hover {
+    background-color: rgb(217, 130, 72);
+  }
+
+  /* EL HEADER */
+
+  #header__sectionTitulo {
+    /* flex: auto; */
+    line-height: 2;
+    font-size: medium;
+    background-color: rgb(61, 128, 243);
+    /* padding: 0 0; */
+    text-align: center;
+    align-items: center;
+    margin-bottom: 0.1rem;
+    border: 0.1rem solid rgb(85, 85, 85);
+    height: max-content;
+  }
+
+  #header__sectionTitulo h1,
+  #header__sectionTitulo h2 {
+    color: white;
+    /* font-weight: 900; */
+  }
+
+  #header__sectionTitulo h2 {
+    font-size: 1em;
+    font-weight: 100;
+  }
+
+  /*main*/
+
+  main {
+    padding: 0 0.1rem;
+  }
+
+  /* contacto html */
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #252323e8;
+  }
+
+  .contacto input {
+    /* justify-content: center; */
+    padding: 0.8rem;
+    border: 1px solid rgb(43, 43, 222);
+    text-align: center;
+    font-size: x-large;
+    gap: 5px;
+    width: 100%;
+    background-color: #333131e8;
+    color: white;
+  }
+
+  .contacto input:focus {
+    color: white;
+  }
+  .contacto label {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  #areaText {
+    justify-content: center;
+    padding: 1rem;
+    margin-top: 1px;
+    border: 1px solid rgb(43, 43, 222);
+    text-align: center;
+    font-size: x-large;
+    gap: 1px;
+    width: 100%;
+    background-color: #333131e8;
+    color: white;
+  }
+
+  #msgLabel {
+    align-self: center;
+    color: white;
+  }
+  #checkArticle {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #terminos {
+    align-self: flex-end;
+  }
+  #select {
+    display: flex;
+  }
+
+  #selectCountry {
+    margin-left: 5px;
+    margin: 15px 15px;
+    /* border-bottom: 12px;
+  border-top: -5px;
+  border-left: 15px; */
+    /* padding: 2px; */
+    align-items: center;
+    width: 40%;
+    font-size: larger;
+    background-color: #333131e8;
+    color: white;
+  }
+
+  .articleTextArea {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contacto label {
+    padding: 1rem;
+    /* border: 0.5px solid rgba(190, 190, 238, 0.795); */
+    text-align: left;
+    justify-content: flex-start;
+    font-size: x-large;
+  }
+
+  #terminos {
+    align-self: flex-end;
+    height: 20px;
+    border: 1px solid rgb(43, 43, 222);
+  }
+
+  #area {
+    display: inline-flex;
+    padding: 2px;
+    margin-top: 30px;
+    border-top: 4px;
+    border: 1px solid red;
+    flex: 1;
+    min-height: 50px;
+    width: 8rem;
+  }
+  #formulario__btnEnviar {
+    font-size: xx-large;
+    height: 60px;
+    width: 100%;
+    flex-basis: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    align-items: center;
+    background-color: #333131e8;
+    color: white;
+    border: 1px solid rgb(43, 43, 222);
+  }
+}
+
+table {
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0.5rem;
+  border: 1px solid rgb(167, 162, 162);
+}
+th {
+  background-color: #eeeeee;
+  color: #0f0707;
+}
+
+tr:nth-child(even) {
+  background-color: #7c7c7c;
+}
+
+tr:nth-child(odd) {
+  background-color: #242424;
+}
+
+.elementos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+hr {
+  width: 80vw;
+}

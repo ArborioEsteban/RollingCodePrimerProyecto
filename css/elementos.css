@@ -1,0 +1,229 @@
+.elementos {
+  display: flex;
+  flex-direction: column;
+}
+p {
+  color: white;
+}
+.elementos hr {
+  width: 98vw;
+}
+
+
+
+#parrafo1 {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+  }
+  #parrafo1 h3,
+  h4,
+  h5,
+  h6 {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    /* font-size: medium; */
+  }
+
+  #mapita{
+  width: 60vw;
+  height: 40vh;
+}
+#parrafo2 {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #parrafo3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  /* #parrafo3 h4,
+  h5 {
+    font-size: larger;
+    justify-content: center;
+    align-self: baseline;
+    text-align: center;
+  } */
+
+  #parrafo3 ol {
+    justify-content: flex-start;
+    justify-content: center;
+    font-size: large;
+  }
+  #parrafo3 ol,
+ul {
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+/* #parrafo2 h2,h3{
+  text-align: center;
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+}
+#parrafo2 p{
+  align-items: center;
+  font-size: x-large;
+}
+
+#parrafo3 h4,h5{
+  font-size: xx-large;
+
+}*/
+
+@media screen and (max-width: 768px) {
+  /* ELEMENTOS .html */
+
+  #parrafo1 {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+  }
+  #parrafo1 h3,
+  h4,
+  h5,
+  h6 {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    /* font-size: medium; */
+  }
+
+  #parrafo2 {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #parrafo2 h2,
+  h3 {
+    text-align: center;
+    /* display: inline; */
+    align-items: center;
+    justify-content: center;
+  }
+
+  #parrafo2 p {
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+    text-align: center;
+  }
+
+  #parrafo3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+  }
+  #parrafo3 h4,
+  h5 {
+    justify-content: flex-end;
+  }
+
+  #parrafo3 ol {
+    justify-content: flex-start;
+    justify-content: center;
+  }
+
+  #parrafo5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4rem;
+  }
+  #parrafo5 h3 {
+    align-self: center;
+  }
+
+  #mapita {
+    width: 80vw;
+  }
+}
+@media screen and (max-width: 576px) {
+  /* ELEMENTOS .html */
+  p {
+    color: white;
+  }
+
+  #parrafo1 {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+  }
+  #parrafo1 h3,
+  h4,
+  h5,
+  h6 {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    /* font-size: medium; */
+  }
+
+  #parrafo2 {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #parrafo2 h2,
+  h3 {
+    text-align: center;
+    /* display: inline; */
+    align-items: center;
+    justify-content: center;
+  }
+
+  #parrafo2 p {
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+    text-align: center;
+  }
+
+  #parrafo3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+  }
+  #parrafo3 h4,
+  h5 {
+    justify-content: flex-end;
+  }
+
+  #parrafo3 ol {
+    justify-content: flex-start;
+    justify-content: center;
+  }
+
+  #parrafo5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4rem;
+  }
+  #parrafo5 h3 {
+    align-self: center;
+  }
+
+  #mapita {
+    width: 80vw;
+  }
+}

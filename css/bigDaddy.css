@@ -1,0 +1,297 @@
+* {
+  margin: 10px;
+  border: 10px;
+  
+  
+}
+
+h1 {
+  color: rgb(169, 104, 249);
+}
+.robot {
+  position: relative;
+  margin: auto;
+  display: block;
+  /* background-color: rgb(64, 53, 53); */
+  width: 1200px;
+  min-height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#foco {
+  height: 12px;
+  width: 16px;
+  background-color: gray;
+  border-radius: 500%;
+  position: absolute;
+  left: 37%;
+  top: 21%;
+}
+#foco:hover {
+  background-color: rgb(255, 0, 0);
+}
+#antena {
+  height: 4px;
+  width: 69px;
+  background-color: grey;
+  position: absolute;
+  left: 38%;
+  top: 22%;
+}
+
+#focoDerecha {
+  height: 12px;
+  width: 16px;
+  background-color: gray;
+  border-radius: 500%;
+  position: absolute;
+  left: 61%;
+  top: 21%;
+}
+#focoDerecha:hover {
+  background-color: rgb(255, 0, 0);
+}
+#antenaDerecha {
+  height: 4px;
+  width: 69px;
+  background-color: grey;
+  position: absolute;
+  left: 55.5%;
+  top: 21.7%;
+}
+
+#head {
+  position: absolute;
+  left: 42.5%;
+  top: 12.3%;
+  background-color: rgb(133, 199, 249);
+  height: 110px;
+  width: 180px;
+  border-top-left-radius: 40px 50px;
+  border-top-right-radius: 40px 50px;
+  border-bottom-left-radius: 40px 50px;
+  border-bottom-right-radius: 40px 50px;
+  border-color: rgb(114, 188, 245);
+  border: 4px solid rgb(0, 0, 0);
+}
+
+#gorrito {
+  background-color: rgb(255, 255, 255);
+  height: 40px;
+  width: 150px;
+  position: absolute;
+  z-index: 99;
+  top: 22px;
+  left: 43.8%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border: 2px solid rgb(31, 30, 30);
+}
+#ojoI {
+  position: absolute;
+  left: 10%;
+  top: 0px;
+  height: 25px;
+  width: 25px;
+  background-color: rgb(221, 59, 0);
+  border-radius: 100%;
+  border: 2px solid black;
+}
+#ojoD {
+  position: absolute;
+  left: 60%;
+  top: 0px;
+  height: 25px;
+  width: 25px;
+  background-color: rgb(221, 59, 0);
+  border-radius: 100%;
+  border: 2px solid black;
+}
+.boca {
+  position: absolute;
+  left: 582px;
+  top: 22%;
+  background-color: rgb(45, 42, 42);
+  height: 40px;
+  width: 26px;
+  border-radius: 20%;
+  border: 0.2px solid rgb(255, 255, 255);
+}
+.boca:hover {
+  border: 0.5px solid rgb(0, 0, 0);
+  background-color: rgb(133, 199, 249);
+  
+}
+
+#cuerpo {
+  background-color: rgb(133, 199, 249);
+  height: 250px;
+  width: 250px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  position: absolute;
+  left: 39.5%;
+  top: 36%;
+  border: 4px solid black;
+}
+#brazoIzq {
+  position: absolute;
+  top: 45%;
+  left: 33.2%;
+  background-color: rgb(133, 199, 249);
+  width: 80px;
+  height: 35px;
+  border: 4px solid black;
+}
+#ganchoIzq {
+  position: absolute;
+  top: 35%;
+  left: 31.8%;
+  background-color: rgb(133, 199, 249);
+  width: 30px;
+  height: 85px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border: 4px solid black;
+}
+#brazoDer {
+  position: absolute;
+  top: 45%;
+  left: 59.6%;
+  background-color: rgb(133, 199, 249);
+  width: 80px;
+  height: 35px;
+  border: 4px solid black;
+}
+#ganchoDer {
+  position: absolute;
+  top: 45%;
+  left: 65%;
+  background-color: rgb(133, 199, 249);
+  width: 30px;
+  height: 85px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border: 4px solid black;
+
+}
+
+#pollera {
+  background-color: black;
+  height: 120px;
+  width: 260px;
+  position: absolute;
+  top: 60%;
+  left: -7%;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border: 2px solid rgb(169, 167, 167);
+}
+
+#delantal {
+  background-color: rgb(255, 255, 255);
+  height: 40px;
+  width: 250px;
+  position: absolute;
+  z-index: 99;
+  top: 0.2px;
+  left: -2%;
+  border-bottom-left-radius: 90px;
+  border-bottom-right-radius: 90px;
+  border: 2px solid rgb(177, 165, 165);
+}
+
+#punto1 {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  background-color: red;
+  position: absolute;
+  left: 100px;
+  top: 30px;
+  
+}
+#punto1:hover {
+    background-color: rgb(105, 238, 114);
+  
+}
+#punto2 {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  background-color: red;
+  position: absolute;
+  left: 105px;
+  top: 80px;
+}
+#punto3 {
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background-color: red;
+  position: absolute;
+  left: 110px;
+  top: 120px;
+}
+#patin{
+  position: absolute;
+  width: 120px;
+  height: 60px;
+  top:91%;
+  left: 45.5%;
+  background-color: rgb(133, 199, 249);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 100%;
+  border: 2px solid black;
+
+}
+
+#rueda {
+  background-color: black;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  position: absolute;
+  top: 510px;
+  left: 44%;
+}
+
+#eje{
+  background-color: rgb(255, 255, 255);
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  position: fixed;
+  top: 546px;
+  left: 47%;
+  z-index: 1111;
+
+}
+#eje2{
+  background-color: rgb(255, 255, 255);
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  position: fixed;
+  top: 546px;
+  left: 51.7%;
+  z-index: 1111;
+
+}
+#rueda2 {
+  background-color: black;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  position: absolute;
+  top: 510px;
+  left: 51.5%;
+}
+
+#robotina{
+  position: absolute;
+  left: 1%;
+}
